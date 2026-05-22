@@ -269,32 +269,19 @@ a:focus-visible, button:focus-visible {
   .location { grid-template-columns: 1fr; gap: 1.5rem; }
 }
 
-/* ---------- Price card ---------- */
-.price-card {
-  background: #fff; border-radius: var(--radius);
-  padding: 2rem; margin-top: 1.5rem;
-  box-shadow: var(--shadow); max-width: 480px;
-  border-top: 4px solid var(--coral);
+/* ---------- Lidmaatschap ---------- */
+.benefits {
+  list-style: none; padding: 0;
+  margin: 1.5rem 0 2rem; max-width: 38rem;
 }
-.price-card__amount {
-  font-size: 3rem; font-weight: 700; color: var(--teal-dark);
-  margin: 0 0 1rem; line-height: 1;
+.benefits li {
+  padding: .6rem 0 .6rem 1.75rem; position: relative;
 }
-.price-card__amount span:first-child { font-size: 1.5rem; vertical-align: top; }
-.price-card__period {
-  font-size: 1rem; font-weight: 500; color: var(--ink-muted);
-}
-.price-card__list {
-  list-style: none; padding: 0; margin: 0 0 1.5rem;
-}
-.price-card__list li {
-  padding: .5rem 0 .5rem 1.5rem; position: relative;
-  border-bottom: 1px solid var(--line);
-}
-.price-card__list li:last-child { border-bottom: 0; }
-.price-card__list li::before {
+.benefits li + li { border-top: 1px solid var(--line); }
+.benefits li::before {
   content: "✓"; color: var(--coral-dark);
-  position: absolute; left: 0; font-weight: 700;
+  position: absolute; left: 0; top: .6rem;
+  font-weight: 700;
 }
 
 /* ---------- Board ---------- */
